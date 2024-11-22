@@ -1,0 +1,118 @@
+body{
+    background-image: url(image/index.bg.jpg);
+    background-size: cover;
+}
+header {
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: blue;
+    border-style: hidden;
+    background: scroll;
+    top: 0;
+    width: 100%;
+  }
+  
+  .menu li {
+    float: left;
+  }
+  
+  .menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+.menu a:hover{
+    color: red;
+    transition: 0.5s ease-in-out;
+  }
+  h1{
+    padding: 40px;
+    text-align: center;
+    font-style: italic;
+    font-family: "Sevillana", cursive;
+    font-weight: bolder;
+    color: darkorange;;
+    transition: 0.5s ease-in-out;
+}
+h2.description{
+    padding: 20px;
+    text-align: center;
+    font-style: italic;
+    font-family: "Times New Roman", serif;
+    font-weight: bolder;
+    color: darkturquoise;
+}
+h2{
+    color: darkorange;
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+p{
+    color: darkgray;
+    font-size: 16px;
+}
+p.one{
+    padding-left: 150px;
+}
+p.two{
+    padding-left: 150px;
+}
+p.three{
+    padding-left: 30px;
+}
+p.four{
+    padding-left: 150px;
+}
+
+@media screen and (max-width: 600px) {
+    .menu li {
+        float: none;
+    }
+    .menu li a {
+        display: block;
+        text-align: left;
+    }
+}
+.regesterbtn{
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.5s ease-in-out;
+    text-align: center;
+}
+a.register{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s ease-in-out;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border: 2px solid white;
+    border-style: outset;
+    padding: 10px;
+    background-color: black;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+a.register:hover{
+    background-color: darkorange;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
