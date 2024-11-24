@@ -1,24 +1,43 @@
 body{
-    background-image: url(image/schedule.bg.jpg);
+    background-image: url(image/schedule.bg.png);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     padding: 20px;
+}
+.button{
+    color: white;
+    padding-left:500px; ;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.5s ease-in-out;
+    text-align: center;
 }
 a{
     color: white;
     text-decoration: none;
-    padding-left: 1250px;
+    font-weight: bolder;
+    border: 2px solid white;
+    padding: 10px;
+    background-color: black;
+    border-radius: 5px;
 }
 a:hover{
-    color: red;
+    background-color: orange;
     transition: 0.5s ease-in-out;
 }
 h1.heading{
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
     font-family: "Sevillana", cursive;
     font-weight: 400;
     font-style: italic;
     padding: 50px;
+    background-image: url(image/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 table{
     width: 100%;
@@ -38,8 +57,28 @@ th, td{
 th{
     background-color: darkblue;
     color:lawngreen;
+
 }
 td{
     background-color: lightgray;
     color: black;
+}
+@media (max-width:450px){
+    h1.heading{
+        font-size: 30px;
+        background-image: url(image/bg.jpg);
+        background-size: cover;
+        width: 50%;
+        background-position: center;
+    }
+    table{
+        width: 100%;
+    }
+    th, td{
+        font-size: medium;
+    }
+    .button{
+        padding-left: 200px;
+    }
+
 }
