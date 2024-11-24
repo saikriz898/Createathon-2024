@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 body{
     background-image: url(image/background-image.png);
     background-size: cover;
@@ -61,7 +65,7 @@ div.logo{
 }
 
 .event-content{
-    background-color: gray;
+    background-color: black;
     padding: 10px;
 
 }
@@ -76,7 +80,7 @@ div.logo{
     text-shadow: 2px 2px 4px black;
     margin-top: 50px;
     margin-bottom: 50px;
-
+    font-style: italic;
 }
 h1.title{
     color: darkgoldenrod;
@@ -84,18 +88,23 @@ h1.title{
     background-position: center;
     background-size: 500vh;
     background-repeat: no-repeat;
+    font-family: pacifico;
 }
+
 h2{
     color: gold;
     font-size: 29px;
     padding-bottom: 10px;
     padding-top: 10px;
     transition: 0.5s ease-in-out;
-    border-block: 2px solid black;
+    border-block: 2px solid white;
+    border-radius: 5px;
+    font-family: dancing script;
 }
 p{
-    color:purple;
+    color:rgb(48, 209, 7);
     font-size: 24px;
+    font-family:Caveat;
 }
 p.one{
     padding-left: 150px;
@@ -164,6 +173,9 @@ a.register:hover{
     color: white;
     transition: 0.5s ease-in-out;
 }
+.description h1{
+    color: gold;
+}
 .Motivation{
     display: flex;
     justify-content: center;
@@ -181,13 +193,13 @@ a.register:hover{
 .Motivation p{
     border-left: 2px solid blue;
     padding: 10px;
-    color: papayawhip;
+    color: rgb(48, 209, 7);
 }
 
 .outcome p{
     border-left: 2px solid blue;
     padding: 10px;
-    color: papayawhip;
+    color: rgb(48, 209, 7);
 }
 .benifits p{
     padding: 10px;
@@ -198,6 +210,9 @@ a.register:hover{
 .para{
     background-color: black;
     border: 2px solid red;
+}
+.para h1{
+    color: gold;
 }
 @media screen and (max-width: 600px) {
     .Motivation{

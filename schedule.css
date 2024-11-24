@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 body{
     background-image: url(image/background-image-2.png);
     background-size: cover;
@@ -67,6 +71,14 @@ h1.heading{
     background-size: cover;
     background-repeat: no-repeat;
 }
+.para{
+    color: blue;
+    background-color: black;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center; 
+    font-family: 'Dancing Script', cursive;
+}
 table{
     width: 100%;
     border-collapse: collapse;
@@ -80,6 +92,7 @@ th, td{
     text-align: center;
     color:white;
     border: 1px solid black;
+    font-family: pofifico;
 }
 
 th{
@@ -107,6 +120,8 @@ td{
         background-size: cover;
         width: 70%;
         background-position: center;
+        background-repeat: no-repeat;
+        font-family: pacifico;
     }
     table{
         width: 100%;
@@ -126,4 +141,5 @@ details{
     padding: 20px;
     margin: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    font-family: 'Dancing Script', cursive;
 }
