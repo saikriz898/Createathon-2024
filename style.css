@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'pacifico', cursive;
+    background-image: url(image/background-image.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+header{
+    background-color:rgb(2,0,36);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: fit-content;
+}
+.logo img {
+    width: 500px;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    border-style: hidden;
+    background: scroll;
+    top: 0;
+    width: 100%;
+  }
+  
+  .menu li {
+    float: left;
+    padding: 40px;
+  }
+  
+  .menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16x;
+    text-decoration: none;
+    border: 2px solid darkolivegreen;
+    padding: 10px;
+    color: black;
+    background-color: darkorange;  
+    border-radius:10px;
+}
+.menu a:hover{
+    background-color:black;
+    color: white;
+    transition: 0.5s ease-in-out;
+    border: 2px solid black;
+  }
+  .heading h1{
+    color: white;
+    font-size: 30px;
+    padding: 100px;
+    text-align: center;
+    background-image: url(image/heading-backgroung-image1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:yellow;
+  }
+  @media (max-width: 768px){
+    .logo img{
+      width: 200px;
+    }
+    .menu ul{
+      display: flex;
+        flex-direction: column;
+    }
+    .menu li{
+      padding: 20px;
+    }
+    .menu li a{
+      padding: 10px;
+    }
+  }
+  details{
+    cursor: pointer;
+    background-color: peru;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    font-family: 'Dancing Script', cursive;
+}
+  .about{
+    padding: 80px;
+  }
+  .about h1{
+    color: yellow;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+  }
+    .about p{
+        color: white;
+        font-size: 20px;
+        padding: 60px;
+        text-align: center;
+    }
+    @media screen and (max-width: 768px){
+        .about p{
+            padding: 20px;
+        }
+    }
+.btn1{
+    background-color: darkorange;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 10px;
+    text-align: center;
+    display: block;
+}
+.btn a{
+    text-decoration: none;
+    color: black;
+    transition: 0.5s ease-in-out;
+}
+
+.btn1:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s ease-in-out;
+    border: 2px solid black;
+}
+.outcome{
+    padding: 80px;
+}
+.outcome h1{
+    color: yellow;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    padding: 30px;
+}
+.outcome p{
+    color: white;
+    font-size: 20px;
+    padding: 60px;
+    text-align: center;
+}
+.benifits{
+    padding: 80px;
+    text-align: center;
+    color: yellow;
+    font-size: 30px;
+    text-decoration: underline;
+}
+@media screen and (max-width: 768px){
+    
+    .outcome p{
+        padding: 20px;
+    }
+}
+  .row {
+    margin: 8px;
+  }
+  
+  /* Add padding BETWEEN each column */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 25%;
+  }
+  
+  /* Clear floats after rows */ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    background-color: rgb(219, 131, 16);
+    padding: 10px;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+body{
+    background-image: url(image/background-image-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+header{
+    background-color: rgb(2,0,36);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: fit-content;
+    border-radius: 20px;
+}
+.logo img {
+    width: 500px;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    border-style: hidden;
+    background: scroll;
+    top: 0;
+    width: 100%;
+  }
+  
+  .menu li {
+    float: left;
+    padding: 40px;
+  }
+  
+  .menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16x;
+    text-decoration: none;
+    border: 2px solid darkolivegreen;
+    padding: 10px;
+    color: black;
+    background-color: darkorange;  
+    border-radius:10px;
+}
+.menu a:hover{
+    background-color:black;
+    color: white;
+    transition: 0.5s ease-in-out;
+    border: 2px solid black;
+  }
+.para{
+    color: blue;
+    background-color: black;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center; 
+}
+
+h1.heading{
+    text-align: center;
+    font-size: 40px;
+    font-family: "Sevillana", cursive;
+    font-weight: 400;
+    font-style: italic;
+    padding: 50px;
+    background-image: url(image/heading-backgroung-image.jpg);
+    background-size: cover;
+    width: 100%;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid black;
+    margin-bottom: 30px;
+}
+th, td{
+    margin-bottom: 20px;
+    font-size: large;
+    padding: 10px;
+    text-align: center;
+    color:white;
+    border: 1px solid black;
+    font-family: pofifico;
+}
+
+th{
+    background-color: darkblue;
+    color:lawngreen;
+
+}
+td{
+    background-color: lightgray;
+    color: black;
+}
+@media (max-width:450px){
+    .menu li {
+        float: none;
+    }
+    .menu li a {
+        display: block;
+        text-align: left;
+    }
+    h1.heading{
+        display: block;
+        text-align: center;
+        font-size: 30px;
+        background-image: url(image/heading-backgroung-image.jpg);
+        background-size: cover;
+        width: 70%;
+        background-position: center;
+        background-repeat: no-repeat;
+        font-family: pacifico;
+    }
+    table{
+        width: 100%;
+    }
+    th, td{
+        font-size: medium;
+    }
+    .button{
+        padding-left: 200px;
+    }
+
+}
+details{
+    cursor: pointer;
+    background-color: peru;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    font-family: 'Dancing Script', cursive;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
