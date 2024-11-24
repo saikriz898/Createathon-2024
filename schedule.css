@@ -120,6 +120,7 @@ td{
 
 }
 details{
+    cursor: pointer;
     background-color: peru;
     border-radius: 10px;
     padding: 20px;
