@@ -214,6 +214,11 @@ a.register:hover{
 .para h1{
     color: gold;
 }
+.para p{
+    color: rgb(48, 209, 7);
+    font-size: 24px;
+    text-align: center;
+}
 @media screen and (max-width: 600px) {
     .Motivation{
         display: block;
