@@ -72,7 +72,7 @@ h1.heading{
     padding: 50px;
     background-image: url(image/heading-backgroung-image.jpg);
     background-size: cover;
-    width: 100%;
+    background-position: center;
 }
 table{
     width: 100%;
@@ -99,6 +99,21 @@ td{
     background-color: lightgray;
     color: black;
 }
+@media (max-width: 768px){
+    .logo img{
+      width: 200px;
+    }
+    .menu ul{
+      display: flex;
+        flex-direction: column;
+    }
+    .menu li{
+      padding: 20px;
+    }
+    .menu li a{
+      padding: 10px;
+    }
+  }
 @media (max-width:450px){
     .menu li {
         float: none;
