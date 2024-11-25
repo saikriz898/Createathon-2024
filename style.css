@@ -86,13 +86,15 @@ header{
   }
   details{
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: peru;
     border-radius: 10px;
     padding: 20px;
-    margin: 20px;
     font-family: 'Dancing Script', cursive;
-    transform: scale(1.1);
 }
+
 details summary{
     font-size: 20px;
     font-weight: bold;
@@ -103,10 +105,10 @@ details summary{
     cursor: pointer;
 }
 details p{
-    font-size: 20px;
-    color: black;
-    padding: 20px;
-    text-align: center;
+  padding: 20px;
+}
+details h2{
+  color: yellow;
 }
   .about{
     padding: 80px;
