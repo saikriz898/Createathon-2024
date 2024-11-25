@@ -136,6 +136,7 @@ header{
   background-color: black;
   color: #fff;
   transition: 0.5s ease-in-out;
+  transform: scale(1.1);
 }
 .outcome{
     padding: 80px;
@@ -184,6 +185,13 @@ header{
   .content {
     background-color: rgb(219, 131, 16);
     padding: 10px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+  }
+  .content:hover {
+    background-color: #ddd;
+    transition: 0.5s ease-in-out;
+    transform: scale(1.1);
   }
   @media screen and (max-width: 900px) {
     .column {
@@ -230,6 +238,8 @@ footer a:hover {
 }
 .scroll-button:hover{
   background-color: #ddd;
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
 }
 .scroll-button i{
   font-size: 20px;
