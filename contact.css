@@ -121,3 +121,32 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+@media screen and (max-width: 600px) {
+    .logo img {
+        width: 200px;
+    }
+    .menu li {
+        padding: 20px;
+    }
+    .menu li a {
+        padding: 10px;
+    }
+    main {
+        padding: 10px;
+    }
+    input, textarea {
+        padding: 5px;
+        font-size: 14px;
+    }
+    button {
+        padding: 5px;
+        font-size: 14px;
+    }
+    footer p {
+        font-size: 14px;
+    }
+    footer a {
+        font-size: 14px;
+    }
+    
+}

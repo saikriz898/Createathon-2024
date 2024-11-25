@@ -5,7 +5,6 @@
     scroll-behavior: smooth;
 }
 body{
-    font-family: 'pacifico', cursive;
     background-image: url(image/background-image.png);
     background-size: cover;
     background-position: center;
