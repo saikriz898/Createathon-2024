@@ -6,22 +6,17 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+header{
+    background-color: rgb(2,0,36);
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-height: fit-content;
-    
+    border-radius: 20px;
 }
-header img {
-    width: 50%;
-    height: 50%;
-    
+.logo img {
+    width: 500px;
 }
 .menu ul {
     list-style-type: none;
