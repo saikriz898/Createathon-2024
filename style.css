@@ -466,3 +466,31 @@ footer a:hover {
   font-size: 1.5rem;
   text-align: center;
 }
+.creator{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.creators-heading{
+  font-size: 2rem;
+padding: 80px;
+  text-align: center;
+}
+.creators>.row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.creators>.row>.column>.content{
+  text-align: center;
+  padding: 20px;
+}
+.creators>.row>.column>.content:hover{
+  text-align: center;
+  padding: 20px;
+  transform: none;
+}
