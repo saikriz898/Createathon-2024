@@ -316,18 +316,27 @@ padding: 80px;
   color: #2E4057;
   text-align: center;
   font-weight: 700;
+  font-family: 'Poppins', sans-serif;
   padding: 80px;
 }
 
 .guideline-heading h1{
   text-decoration: underline;
   font-size: 3rem;
+  margin: 20px;
 }
+
 .guideline-content h2{
-  font-size: 2rem;
+  margin: 40px;
+  text-align: center;
+}
+.guideline-content h3{
+  margin: 40px;
+  text-align: left;
 }
 .guideline-content p{
-  font-size: 1.5rem;
+  margin: 40px;
+  width: 90%;
 }
 @media (max-width: 768px){
   .guideline-heading h1{
@@ -401,6 +410,14 @@ padding: 80px;
   width: 100%;
   height: auto;
 }
+.creators>.row>.column>.content{
+  padding: 20px;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+.creators>.row>.column>.content:hover{
+  transform: none;
+}
 @media screen and (max-width: 768px){
   .creators h1{
     font-size: 2rem;
@@ -472,7 +489,6 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
-/*scroll-button*/
 .scroll-button{
   position: fixed;
   bottom: 20px;
