@@ -4,6 +4,10 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.3s ease;
+    line-height: 1.5;
+    text-decoration: none;
 }
 :root{
   --color-text: #616161;
@@ -354,29 +358,6 @@ background: linear-gradient(to left, var(--card3-gradient-color1), var(--card3-g
 .card-btn.four{
 background: linear-gradient(to left, var(--card4-gradient-color1), var(--card4-gradient-color2));
 }
-@media (max-width:768px) {
-  .card {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 50px;
-    gap: 20px;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-  footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-  }
-}
-@media (max-width: 768px) {
-  /* Add some top margin to the footer to avoid overlap */
-  footer {
-    margin-top: 100px;
-  }
-  /* Hide the footer when the screen is less than 600 pixels wide */
-}
 /*guideline*/
 .guideline{
   color: #2E4057;
@@ -395,7 +376,82 @@ background: linear-gradient(to left, var(--card4-gradient-color1), var(--card4-g
 .guideline-content p{
   font-size: 1.5rem;
 }
+.creator{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.creators-heading{
+  font-size: 2rem;
+padding: 80px;
+  text-align: center;
+}
+.creators>.row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.creators>.row>.column>.content{
+  text-align: center;
+  padding: 20px;
+}
+.creators>.row>.column>.content:hover{
+  text-align: center;
+  padding: 20px;
+  transform: none;
+}
+@media (max-width: 768px) 
+{
+  .column {
+    width: 100%;
+  }
+  .creators>.row>.column>.content{
+    padding: 10px;
+  }
+  .creators>.row>.column>.content:hover{
+    padding: 10px;
+  }
+  .creators>.row>.column>.content h2{
+    font-size: 1rem;
+  }
+  /*schedule*/
+.schedule{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+  color: #2E4057;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  font-size: xx-large;
+}
 
+.schedule h1{
+  font-size: 2rem;
+}
+.schedule p{
+  font-size: 1.5rem;
+}
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 50px;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.heading h1{
+  font-size: 2rem;
+  padding: 20px;
+  text-align: center;
+  font-weight: 700;}
+}
 /*button*/
 .btn{
   margin-left: 100px;
@@ -421,6 +477,10 @@ background: linear-gradient(to left, var(--card4-gradient-color1), var(--card4-g
   color: #fff;
   transition: 0.5s ease-in-out;
   border: 2px solid black;
+}
+.register p{
+  font-size: 1.5rem;
+  text-align: center;
 }
  footer {
     background-color: #333;
@@ -460,42 +520,4 @@ footer a:hover {
 }
 .scroll-button i{
   font-size: 20px;
-}
-@media (max-width: 768px){
-  footer{
-    position: static;
-  }
-
-}
-.register p{
-  font-size: 1.5rem;
-  text-align: center;
-}
-.creator{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-.creators-heading{
-  font-size: 2rem;
-padding: 80px;
-  text-align: center;
-}
-.creators>.row{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 50px;
-}
-.creators>.row>.column>.content{
-  text-align: center;
-  padding: 20px;
-}
-.creators>.row>.column>.content:hover{
-  text-align: center;
-  padding: 20px;
-  transform: none;
 }
