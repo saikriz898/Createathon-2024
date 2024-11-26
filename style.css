@@ -37,7 +37,7 @@ header{
 
 .logo img {
     width: 200px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 .menu ul {
   list-style-type: none;
@@ -80,6 +80,7 @@ header{
   color: red;
   transition: 0.5s ease-in-out;
   display: none;
+  position: absolute;
 }
 @media (max-width: 768px){
   .logo img{
@@ -175,6 +176,17 @@ header{
     margin: 40px;
     font-size: 1.5rem;
 }
+@media (max-width: 768px){
+    .about-content h2{
+        font-size: 2rem;
+    }
+    .about-content p{
+        font-size: 1rem;
+        width: 90%;
+        padding-right: 30px;
+    }
+  
+}
 /*outcome*/
 .outcome{
     display: flex;
@@ -199,7 +211,30 @@ header{
     margin: 40px;
     font-size: 1.5rem;
 }
+@media (max-width: 768px){
+    .outcome-content h1{
+        font-size: 2rem;
+    }
+    .outcome-content p{
+        font-size: 1rem;
+        width: 90%;
+        padding-right: 30px;
+    }
+}
 /*why creathon*/
+.content {
+  background-color: rgb(219, 131, 16);
+  padding: 10px;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+.benifits-heading h1{
+  color: #2E4057;
+  text-align: center;
+  font-size: 3rem;
+  padding: 80px;
+  text-decoration: underline;
+}
 .row {
   margin: 8px;
 }
@@ -216,32 +251,30 @@ header{
   display: table;
   clear: both;
 }
-.content {
-  background-color: rgb(219, 131, 16);
-  padding: 10px;
-  transition: 0.5s ease-in-out;
-  cursor: pointer;
-}
+
 .content:hover {
   background-color: #ddd;
   transition: 0.5s ease-in-out;
   transform: scale(1.1);
 }
-.benifits-heading h1{
-  color: #2E4057;
-  text-align: center;
-  font-size: 3rem;
-  padding: 80px;
-  text-decoration: underline;
-}
+
 @media screen and (max-width: 900px) {
   .column {
     width: 50%;
+    padding: 15px;
   }
 }
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
+  }
+}
+@media (max-width: 768px){
+  .benifits-heading h1{
+    font-size: 2rem;
+  }
+  .content{
+    padding: 5px;
   }
 }
 /*schedule*/
@@ -268,95 +301,15 @@ header{
 font-size: medium;
 padding: 80px;
 }
-.card{
-font-family: 'Roboto', sans-serif;
-height: 100vh;
-display: flex;
-align-items: center;
-justify-content: center;
-flex-wrap: wrap;
-gap: 30px;
-}
-.card-wrap{
-width: 220px;
-background: #fff;
-border-radius: 20px;
-border: 5px solid #fff;
-overflow: hidden;
-color: var(--color-text);
-box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
-            rgba(0, 0, 0, 0.23) 0px 6px 6px;
-cursor: pointer;
-transition: all .2s ease-in-out;
-}
-.card-wrap:hover{
-transform: scale(1.1);
-}
-.card-header{
-height: 200px;
-width: 100%;
-background: red;
-border-radius:100% 0% 100% 0% / 0% 50% 50% 100%;
-display: grid;
-place-items: center;
-
-}
-.card-header i{
-color: #fff;
-font-size: 72px;
-}
-.card-content{
-display: flex;
-flex-direction: column;
-align-items: center;
-width: 60%;
-margin: 0 auto;
-}
-.card-title{
-text-align: center;
-text-transform: uppercase;
-font-size: 16px;
-margin-top: 10px;
-margin-bottom: 20px;
-
-}
-.card-text{
-text-align: center;
-font-size: 12px;
-margin-bottom: 20px;
-}
-.card-btn{
-border: none;
-border-radius: 100px;
-padding: 5px 30px;
-color: #fff;
-margin-bottom: 15px;
-text-transform: uppercase;
-}
-.card-header.one{
-background: linear-gradient(to bottom left, var(--card1-gradient-color1), var(--card1-gradient-color2));
-}
-.card-header.two{
-background: linear-gradient(to bottom left, var(--card2-gradient-color1), var(--card2-gradient-color2));
-}
-.card-header.three{
-background: linear-gradient(to bottom left, var(--card3-gradient-color1), var(--card3-gradient-color2));
-}
-.card-header.four{
-background: linear-gradient(to bottom left, var(--card4-gradient-color1), var(--card4-gradient-color2));
-}
-
-.card-btn.one{
-background: linear-gradient(to left, var(--card1-gradient-color1), var(--card1-gradient-color2));
-}
-.card-btn.two{
-background: linear-gradient(to left, var(--card2-gradient-color1), var(--card2-gradient-color2));
-}
-.card-btn.three{
-background: linear-gradient(to left, var(--card3-gradient-color1), var(--card3-gradient-color2));
-}
-.card-btn.four{
-background: linear-gradient(to left, var(--card4-gradient-color1), var(--card4-gradient-color2));
+@media screen and (max-width: 768px){
+  .heading h1{
+    font-size: 2rem;
+    padding: 50px;
+  }
+  .schedule p{
+    font-size: 1rem;
+  }
+  
 }
 /*guideline*/
 .guideline{
@@ -376,48 +329,16 @@ background: linear-gradient(to left, var(--card4-gradient-color1), var(--card4-g
 .guideline-content p{
   font-size: 1.5rem;
 }
-.creator{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-.creators-heading{
-  font-size: 2rem;
-padding: 80px;
-  text-align: center;
-}
-.creators>.row{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 50px;
-}
-.creators>.row>.column>.content{
-  text-align: center;
-  padding: 20px;
-}
-.creators>.row>.column>.content:hover{
-  text-align: center;
-  padding: 20px;
-  transform: none;
-}
-@media (max-width: 768px) 
-{
-  .column {
-    width: 100%;
+@media (max-width: 768px){
+  .guideline-heading h1{
+    font-size: 2rem;
   }
-  .creators>.row>.column>.content{
-    padding: 10px;
+  .guideline-content h2{
+    font-size: 1.5rem;
   }
-  .creators>.row>.column>.content:hover{
-    padding: 10px;
-  }
-  .creators>.row>.column>.content h2{
+  .guideline-content p{
     font-size: 1rem;
-  }
+  }}
   /*schedule*/
 .schedule{
   display: flex;
@@ -431,7 +352,6 @@ padding: 80px;
   font-family: 'Poppins', sans-serif;
   font-size: xx-large;
 }
-
 .schedule h1{
   font-size: 2rem;
 }
@@ -451,6 +371,54 @@ padding: 80px;
   padding: 20px;
   text-align: center;
   font-weight: 700;}
+
+/*creators*/
+.creators h1{
+  color: #2E4057;
+  text-align: center;
+  font-size: 3rem;
+  padding: 80px;
+}
+.creators>.row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 20px;
+  text-align: center;
+}
+.creators h3{
+  padding: 20px;
+  text-align: center;
+  font-weight: 700;
+}
+.creators p{
+  padding: 20px;
+  text-align: center;
+  font-weight: 700;
+}
+.creators img{
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 768px){
+  .creators h1{
+    font-size: 2rem;
+  }
+  .creators h3{
+    font-size: 1.5rem;
+  }
+  .creators p{
+    font-size: 1rem;
+  }
+  .creators>.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
 }
 /*button*/
 .btn{
@@ -482,6 +450,7 @@ padding: 80px;
   font-size: 1.5rem;
   text-align: center;
 }
+/*footer*/
  footer {
     background-color: #333;
     color: #fff;
@@ -503,6 +472,7 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+/*scroll-button*/
 .scroll-button{
   position: fixed;
   bottom: 20px;
