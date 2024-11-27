@@ -10,23 +10,23 @@
     text-decoration: none;
 }
 :root{
-  --color-text: #616161;
+  --color-text: #2E4057;
   --color-text-btn: #ffffff;
-  --card1-gradient-color1: #f12711;
-  --card1-gradient-color2: #f5af19;
-  --card2-gradient-color1: #7F00FF;
-  --card2-gradient-color2: #E100FF;
-  --card3-gradient-color1: #3f2b96;
-  --card3-gradient-color2: #a8c0ff;
-  --card4-gradient-color1: #11998e;
-  --card4-gradient-color2: #38ef7d;
+  --card1-gradient-color1: #FF6F61;
+  --card1-gradient-color2: #FF6F61;
+  --card2-gradient-color1: #35A79C;
+  --card2-gradient-color2: #35A79C;
+  --card3-gradient-color1: #2E4057;
+  --card3-gradient-color2: #2E4057;
+  --card4-gradient-color1: #B8D8D8;
+  --card4-gradient-color2: #B8D8D8;
 }
 body{
-    background-color:#B8D8D8 ;
+    background-color: #F5F5F5;
 }
 /*header*/
 header{
-    background-color: #35A79C;
+    background-color: #2E4057;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -44,7 +44,7 @@ header{
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: black;
+  background-color: #2E4057;
   border-style: hidden;
   background: scroll;
   top: 0;
@@ -64,12 +64,12 @@ header{
   text-decoration: none;
   border: 2px solid darkolivegreen;
   padding: 10px;
-  color: black;
-  background-color: darkorange;  
+  color: white;
+  background-color: #35A79C;  
   border-radius:10px;
 }
 .menu a:hover{
-  background-color:black;
+  background-color: #FF6F61;
   color: white;
   transition: 0.5s ease-in-out;
   border: 2px solid black;
@@ -132,9 +132,11 @@ header{
     font-weight: 700;
     font-family: 'Poppins', sans-serif;
     font-size: 3rem;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 .banner-content{
     width: 100%;
+    color: white;
 }
 @media screen and (max-width: 768px){
     .banner-content h1{
@@ -160,10 +162,11 @@ header{
     flex-direction: column;
     padding: 20px;
     text-align: center;
-    color: #2E4057;
+    color: white;
     font-weight: 700;
     font-family: 'Poppins', sans-serif;
     font-size: xx-large;
+    background-color: #2E4057;
 }
 .about-content{
     width: 100%;
@@ -195,10 +198,11 @@ header{
     flex-direction: column;
     padding: 20px;
     text-align: center;
-    color: #2E4057;
+    color: white;
     font-weight: 700;
     font-family: 'Poppins', sans-serif;
     font-size: xx-large;
+    background-color: #2E4057;
 }
 .outcome{
     width: 100%;
@@ -223,7 +227,7 @@ header{
 }
 /*why creathon*/
 .content {
-  background-color: rgb(219, 131, 16);
+  background-color: #35A79C;
   padding: 10px;
   transition: 0.5s ease-in-out;
   cursor: pointer;
@@ -253,7 +257,7 @@ header{
 }
 
 .content:hover {
-  background-color: #ddd;
+  background-color: #B8D8D8;
   transition: 0.5s ease-in-out;
   transform: scale(1.1);
 }
@@ -285,10 +289,11 @@ header{
   flex-direction: column;
   padding: 20px;
   text-align: center;
-  color: #2E4057;
+  color: white;
   font-weight: 700;
   font-family: 'Poppins', sans-serif;
   font-size: xx-large;
+  background-color: #2E4057;
 }
 .heading h1{
   color: #2E4057;
@@ -313,11 +318,12 @@ padding: 80px;
 }
 /*guideline*/
 .guideline{
-  color: #2E4057;
+  color: white;
   text-align: center;
   font-weight: 700;
   font-family: 'Poppins', sans-serif;
   padding: 80px;
+  background-color: #2E4057;
 }
 
 .guideline-heading h1{
@@ -356,10 +362,11 @@ padding: 80px;
   flex-direction: column;
   padding: 20px;
   text-align: center;
-  color: #2E4057;
+  color: white;
   font-weight: 700;
   font-family: 'Poppins', sans-serif;
   font-size: xx-large;
+  background-color: #2E4057;
 }
 .schedule h1{
   font-size: 2rem;
@@ -452,13 +459,13 @@ padding: 80px;
     border: 2px solid black;
     color: black;
     padding: 10px;
-    background-color: goldenrod;
+    background-color: #FF6F61;
     border-radius: 20px;
     transition: 0.5s ease-in-out;
 }
 
 .btn a:hover{
-  background-color: black;
+  background-color: #2E4057;
   color: #fff;
   transition: 0.5s ease-in-out;
   border: 2px solid black;
@@ -469,7 +476,7 @@ padding: 80px;
 }
 /*footer*/
  footer {
-    background-color: #333;
+    background-color: #2E4057;
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -494,7 +501,7 @@ footer a:hover {
   bottom: 20px;
   right: 20px;
   cursor: pointer;
-  background-color: #000;
+  background-color: #2E4057;
   color: white;
   padding: 15px 20px;
   border-radius: 50%;
@@ -502,7 +509,7 @@ footer a:hover {
   text-decoration: none;
 }
 .scroll-button:hover{
-  background-color: #ddd;
+  background-color: #B8D8D8;
 }
 .scroll-button i{
   font-size: 20px;
