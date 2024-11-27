@@ -86,16 +86,7 @@ header {
     color: white;
     border: 2px solid black;
     transition: 0.5s ease-in-out;
-}
-
-.menu-icon {
-    font-size: 30px;
-    cursor: pointer;
-    color: red;
-    transition: 0.5s ease-in-out;
-    display: none;
-    position: absolute;
-}    
+}  
 @media (max-width: 768px) {
     .logo img {
         width: calc(100% - 100px);
@@ -151,9 +142,43 @@ header {
       font-size: 38px;
       margin-left: 50px;
       width: initial;
-      
       transition: 0.5s ease-in-out;
     }
+    .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: transparent;
+        border-style: hidden;
+        background: scroll;
+        top: 0;
+        width: 100%;
+    }
+    
+    .menu li {
+        float: left;
+        padding: 10px;
+    }
+    
+    .menu li a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        border: none;
+        background-color: transparent;
+        border-radius: 10px;
+    }
+    
+    .menu a:hover {
+        background-color: #FF6F61;
+        color: white;
+        border: 2px solid black;
+        transition: 0.5s ease-in-out;
+    }
+    
     /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
     .hamburger-icon {
           font-size: 32px;
