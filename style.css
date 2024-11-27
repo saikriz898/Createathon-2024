@@ -386,13 +386,6 @@ header {
     color: white;
     background-color: #2e2e2e;
 }
-.creators>.row{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    background-color: #2E4057;
-  }
   .creators h3{
     padding: 20px;
     text-align: center;
@@ -406,6 +399,10 @@ header {
     width: 200px;
     height: auto;
     border-radius: 50%;
+    }
+    .creators>.row>.column{
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
     }
   .creators>.row>.column>.content{
     padding: 20px;
@@ -433,7 +430,7 @@ header {
     .creators>.row>.column>.content a:hover{
         background-color: #2E4057;
     }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 768px) {
    .creators>.row{
     display: flex;
     justify-content: center;
@@ -471,8 +468,8 @@ header {
     .creators>.row>.column>.content a{
         color: white;
         text-decoration: none;
-        padding-left: 150px;
-        padding-right: 150px;
+        padding-left: 80px;
+        padding-right: 80px;
         padding-top: 10px;
         padding-bottom: 10px;
         background-color: #FF6F61;
