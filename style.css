@@ -194,7 +194,7 @@ header {
 /*why creathon*/
 .content {
     background-color: #2E4057; /* dark blue/slate */
-    border: 2px solid #35A79C; /* teal */
+    border: 2px solid #2E4057; /* dark blue/slate */
     color: white; /* text */
     padding: 10px;
     transition: 0.5s ease-in-out;
