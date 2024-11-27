@@ -38,7 +38,10 @@ header {
     min-height: fit-content;
     margin-top: auto;
 }
-
+.image img {
+    width: 100px;
+    height: auto;
+}
 .logo img {
     width: 200px;
     margin-bottom: 50px;
@@ -228,9 +231,8 @@ header {
     display: table;
     clear: both;
 }
-
 .content:hover {
-    background-color: #B8D8D8; /* light blue/gray */
+    background-color: darkgoldenrod; /* light blue/gray */
     transform: scale(1.1);
 }
 
@@ -301,10 +303,61 @@ header {
     padding: 80px;
     margin-bottom: 20px;
     margin-top: 20px;
-    background-color: #2E4057;
     color: white;
+    background-color: #2e2e2e;
 }
-/*footer*/
+.creators>.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: #2E4057;
+  }
+  .creators h3{
+    padding: 20px;
+    text-align: center;
+    font-weight: 700;
+  }
+  .creators p{
+    text-align: center;
+    font-weight: 700;
+  }
+  .creators1 img{    
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    }
+  .creators>.row>.column>.content{
+    padding: 20px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    background-color: orangered;
+  }
+  .creators>.row>.column>.content:hover{
+    transform: none;
+  }
+    .creators>.row>.column>.content:hover{
+        background-color: darkgreen;
+    }
+    @media screen and (max-width: 600px) {
+   .creators>.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+    .creators>.row>.column>.content{
+    padding: 20px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    }
+    .creators>.row>.column>.content:hover{
+    transform: none;
+    }
+    .creators>.row>.column>.content:hover{
+        background-color: #B8D8D8;
+    }
+    }
 footer {
     background-color: #2E4057;
     color: #fff;
