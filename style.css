@@ -281,7 +281,29 @@ header {
     background-color: #2E4057;
     color: #fff;
 }
-
+.registers p{
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+.guideline-content ul{
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+.creators1 h1{
+    font-size: 3rem;
+    text-align: center;
+    padding: 80px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: #2E4057;
+    color: white;
+}
 /*footer*/
 footer {
     background-color: #2E4057;
@@ -293,6 +315,15 @@ footer {
 
 footer p {
     margin: 5px 0;
+}
+footer.Code-Crusaderss h4{
+    font-size: 3rem;
+    padding: 80px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: #2E4057;
+    color: white;
+    margin-left: 100px;
 }
 
 footer a {
@@ -311,7 +342,7 @@ footer a:hover {
     bottom: 20px;
     right: 20px;
     cursor: pointer;
-    background-color: #2E4057;
+    background-color: #222;
     color: white;
     padding: 15px 20px;
     border-radius: 50%;
@@ -320,9 +351,10 @@ footer a:hover {
 }
 
 .scroll-button:hover {
-    background-color: #B8D8D8;
+    background-color: #2E4057;
 }
 
 .scroll-button i {
     font-size: 20px;
+    color: white;
 }
