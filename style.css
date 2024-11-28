@@ -87,6 +87,10 @@ header {
     border: 2px solid black;
     transition: 0.5s ease-in-out;
 }  
+
+.closebtn{
+    display: none;
+}
 @media (max-width: 768px) {
     .logo img {
         width: calc(100% - 100px);
