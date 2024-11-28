@@ -41,11 +41,6 @@ header {
 .logo-out img{
     width: 300px;
 }
-
-.mobile-menu-items{
-    display: flex;
-    justify-content: space-around;
-}
 .hamburger-icon {
     display: none;
 }
