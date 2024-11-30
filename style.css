@@ -336,7 +336,178 @@ header {
         padding: 5px;
     }
 }
-
+/*schedule*/
+  main {
+    padding: 2vw;
+    background-color:#00000026
+  }
+  .Schedule-heading{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  ul.infoGraphic {
+    font-size: var(--font-size);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    li {
+      position: relative;
+      width: 100%;
+      max-width: 25em;
+      background: var(--bg1);
+      border-radius: 0.5em;
+      padding: 0.5em;
+      z-index: 1;
+      transition: all 0.2s;
+      cursor: pointer;
+      
+      .numberWrap {
+        position: absolute;
+      }
+      .number {
+        font-family: "maven pro", sans-serif;
+        font-size: 13em;
+        font-weight: 900;
+        width: 0.9em;
+        text-align: center;
+        &.fontColor1 {
+          color: var(--blue);
+        }
+        &.fontColor2 {
+          color: var(--green);
+        }
+        &.fontColor3 {
+          color: var(--purple);
+        }
+        &.fontColor4 {
+          color: var(--gold);
+        }
+        &.fontColor5 {
+          color: var(--red);
+        }
+        &.fontColor6 {
+          color: var(--orange);
+        }
+      }
+      .coverWrap {
+        transform: rotate(130deg);
+        position: absolute;
+        width: 18em;
+        height: 15em;
+        left: -3em;
+        top: -1em;
+        .numberCover {
+          position: absolute;
+          background: var(--bg1);
+          width: 18em;
+          height: 6em;
+          border-radius: 50% 50% 0 0;
+          border-bottom: 3px solid #f5f8f7;
+          transition: all 0.4s;
+  
+          &::before {
+            position: absolute;
+            content: "";
+            bottom: 5px;
+            left: 4em;
+            right: 4em;
+            top: 5em;
+            box-shadow: 0 0 30px 17px #48668577;
+            border-radius: 100px / 10px;
+            z-index: -1;
+          }
+          &::after {
+            position: absolute;
+            bottom: 0;
+            content: "";
+            left: -10%;
+            width: 120%;
+            height: 150%;
+            background: radial-gradient(
+              at bottom,
+              #48668533,
+              transparent,
+              transparent
+            );
+            z-index: 1;
+          }
+        }
+      }
+      .content {
+        margin: 8em 3em 1em 7em;
+        position: relative;
+        h2 {
+          font-size: 1.7em;
+          font-weight: 500;
+          text-align: center;
+          margin-bottom: 10px;
+          text-transform: uppercase;
+        }
+        p {
+          line-height: 1.5em;
+        }
+      }
+    }
+  }
+  ul.infoGraphic li:hover .coverWrap .numberCover {
+    border-radius: 100%;
+  }
+  
+  .icon {
+    position: absolute;
+    font-size: 2rem;
+    text-align: center;
+    top: -1.3em;
+    left: 50%;
+    transform: translatex(-50%);
+    &:before {
+      color: #666;
+      font-family: FontAwesome;
+      font-style: normal;
+      font-weight: normal;
+      text-decoration: inherit;
+    }
+  }
+  
+  .iconCodepen {
+    &:before {
+      content: "\f1cb";
+    }
+  }
+  
+  .iconSocial {
+    &:before {
+      content: "\f08a";
+    }
+  }
+  
+  .iconAirplane {
+    &:before {
+      content: "\f1d9";
+    }
+  }
+  
+  .iconMap {
+    &:before {
+      content: "\f278";
+    }
+  }
+  
+  .iconBulb {
+    &:before {
+      content: "\f0eb";
+    }
+  }
+  
+  .iconPeace {
+    &:before {
+      content: "\f25b";
+    }
+  }
 /*button*/
 .btn {
     margin-left: 100px;
