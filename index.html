@@ -11,9 +11,11 @@
 </head>
 <body>
     <header class="head" id="head">
-        <div class="logo"><img src="logo/Createathon-logo.jpg" alt=""></div>
-        <div id="mySidenav" class="sidenav">
-          <a  class="closebtn" onclick="closeNav()" style="cursor: pointer;">&times;</a>
+      <button class="open-btn" onclick="toggleSidebar()">☰</button>
+    <img src="logo/Createathon-logo.jpg" alt="" class="logo">
+      <!-- Left Sidebar -->
+      <div class="sidebar" id="mySidebar">
+          <a href="javascript:void(0)" class="close-btn" onclick="toggleSidebar()">×</a>
           <div class="menu" id="myLinks">
             <ul class="nav-content">
                 <li><a href="#creaters">About Us</a></li>
@@ -22,12 +24,11 @@
             </ul>
         </div>
       </div>
-        <span class="hamburger-icon" onclick="openNav()"> &#9776;</span>
         </header>
         <section class="banner">
             <div class="banner-content">
                 <h1 >Createathon 2024 Edition</h1>
-                <p style="font-style: italic;"> Where Innovation Meets Creativity</p>
+                <p  style=" font-style: italic;"> Where Innovation Meets Creativity</p>
             </div>
         </section>
         <section class="about" id="about">

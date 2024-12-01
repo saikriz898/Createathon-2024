@@ -40,21 +40,72 @@ header {
     min-height: fit-content;
     margin-top: auto;
 }
-.logo-out img{
-    width: 300px;
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border-style: hidden;
+  background: scroll;
+  top: 0;
+  width: 100%;
 }
-.hamburger-icon {
-    display: none;
+
+.menu li {
+  float: right;
+  padding: 10px;
 }
-.logo img {
+
+.menu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: black;
+  border-radius: 20%;
+  transition: scale 0.25s ease-out;
+  &:hover{
+    scale: 1.2;
+  }
+}
+
+.open-btn{
+  display: none;
+}
+.close-btn{
+  display: none;
+}
+.menu a:hover {
+  background-color:black;
+  color: white;
+  transition: 0.5s ease-in-out;
+}  
+.logo {
+  width: calc(50% - 50px);
+  height: auto;
+}
+@media (max-width: 768px) {
+  header {
+    background-color: #2E4057;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: fit-content;
+    margin-top: auto;
+}
+  .logo{
     width: calc(100% - 100px);
     height: auto;
+    padding-left: 100px;
 }
-.menu ul {
+  .menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
+    background-color: transparent;
     border-style: hidden;
     background: scroll;
     top: 0;
@@ -72,137 +123,76 @@ header {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    background-color: black;
-    border-radius: 20%;
-    transition: scale 0.25s ease-out;
+    border: none;
+    background-color: transparent;
+    border-radius: 10px;
     &:hover{
-      scale: 1.2;
+      scale: 1;
     }
 }
-
 
 .menu a:hover {
-    background-color:black;
-    color: white;
+    background-color: transparent;
+    color: black;
+    border: none;
     transition: 0.5s ease-in-out;
-}  
-
-.closebtn{
-    display: none;
 }
-@media (max-width: 768px) {
-    .logo img {
-        width: calc(100% - 100px);
-        height: auto;
-    }
-    div{
-        flex-direction: column;
-    }
-    .sidenav {
-      font-family: sans-serif;
-          text-transform: uppercase;
-        height: 100%;
-        /* 100% Full-height */
-        width: 0;
-        /* 0 width - change this with JavaScript */
-        position: fixed;
-        /* Stay in place */
-        z-index: 10000;
-        /* Stay on top */
-        top: 0;
-        right: 0;
-        background-color: white;
-        /* Black*/
-        overflow-x: hidden;
-        /* Disable horizontal scroll */
-        padding-top: 60px;
-        /* Place content 60px from the top */
-        transition: 0.5s;
-        /* 0.5 second transition effect to slide in the sidenav */
-     
-    }
-    /* The navigation menu links */
-    .sidenav a {
-            margin: 20px 0 0px 0;
-        text-decoration: none;
-        font-size: 25px;
-        color: black;
-        display: block;
-        transition: 0.3s;
-        width: 227px;
-    text-align: -webkit-center;
-    transition: 0.5s ease-in-out;
-    }
-    /* When you mouse over the navigation links, change their color */
-    .sidenav a:hover, .offcanvas a:focus {
-        color: black;
-    }
-    /* Position and style the close button (top right corner) */
-    .sidenav .closebtn {
-      position: absolute;
-      top: -13px;
-      right: 32px;
-      font-size: 38px;
-      margin-left: 50px;
-      width: initial;
-      transition: 0.5s ease-in-out;
-    }
-    .menu ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: transparent;
-        border-style: hidden;
-        background: scroll;
-        top: 0;
-        width: 100%;
-    }
-    
-    .menu li {
-        float: left;
-        padding: 10px;
-    }
-    
-    .menu li a {
-        display: block;
-        color: black;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        border: none;
-        background-color: transparent;
-        border-radius: 10px;
-        &:hover{
-          scale: 1;
-        }
-    }
-    
-    .menu a:hover {
-        background-color: transparent;
-        color: black;
-        border: none;
-        transition: 0.5s ease-in-out;
-    }
-    
-    /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-    .hamburger-icon {
-          font-size: 32px;
-          color: black;
-          text-decoration: none;
-          z-index: 1000;
-          right: 29px;
-          top: 9px;
-          cursor: pointer;
-          display: inherit;
-        transition: 0.5s ease-in-out;
-      }
-      .logo-out img{
-        width: 100px;
-        margin-top: 60px;
-        transition: 0.5s ease-in-out;
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  color: white;
+  z-index: 9999;
+}
 
-      }
+/* Sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* The "close" button */
+.close-btn {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 15px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style for the button that opens the sidebar */
+.open-btn {
+  display: inline;
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+}
+
+.open-btn:hover {
+  background-color: #444;
+}
 }
 /*banner*/
 .banner {
@@ -237,15 +227,15 @@ header {
   }
 }
 .banner-content p{
-  font-size: 2.5rem;
-  margin-top: 20px;
+  font-size: 30px;
 }
 @keyframes fill-text-white {
   to {
     color: white;
   }
 }
-@media screen and (max-width: 768px) {
+
+@media screen and (min-width: 0) and (max-width: 768px) {
     .banner-content h1 {
         font-size: 3rem;
     }
@@ -257,8 +247,8 @@ header {
         margin: 0;
     }
     .about-content p {
-        font-size: 10px;
-        width: 50%;
+        font-size: 30px;
+        width: 90%;
     }
 }
 /*about*/
