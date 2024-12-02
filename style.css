@@ -276,6 +276,25 @@ header {
     padding: 40px;
 }
 
+.section .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.section .row .card {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.section .row .card:first-child {
+    margin-left: 0;
+}
+
+.section .row .card:last-child {
+    margin-right: 0;
+}
+
 .card {
     background: #fff;
     border-radius: 8px;
