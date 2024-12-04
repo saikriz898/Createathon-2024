@@ -271,29 +271,9 @@ header {
 .section {
   background-color: lightgreen;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, auto);
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
     padding: 40px;
-}
-
-.section .row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-.section .row .card {
-    flex: 1;
-    margin: 0 10px;
-}
-
-.section .row .card:first-child {
-    margin-left: 0;
-}
-
-.section .row .card:last-child {
-    margin-right: 0;
 }
 
 .card {
@@ -331,9 +311,15 @@ header {
     }
 
     .card {
-        padding: 15px;
+        padding: 20px;
     }
-    
+    .card p{
+      font-size: 10px;
+    }
+    .section{
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 10px;
+    }
 }
 /*problems*/
 .container-list{
@@ -416,11 +402,11 @@ header {
   }
   ul.infoGraphic {
     font-size: var(--font-size);
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25em, 1fr));
+    gap: 2em;
+    list-style-type: none;
     justify-content: center;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, auto);
     li {
       position: relative;
       width: 100%;
@@ -584,6 +570,12 @@ header {
         }
       }
     }
+    ul.infoGraphic li:hover.coverWrap.numberCover {
+      border-radius: 100%;
+    }
+  }
+  .infoGraphic{
+    grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
   }
   /*guidelines*/
   .guidelines{
@@ -832,12 +824,4 @@ footer .social-icon-content{
 .scroll-button i {
   font-size: 20px;
   color: white;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Times New Roman', Times, serif;
-}
-
-p {
-    font-family: 'Arial', sans-serif;
 }
